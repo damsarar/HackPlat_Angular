@@ -1,0 +1,16 @@
+.sidebar-card {
+    max-width: 400px;
+    background-color:#673AB7;
+}
+
+.sidebar-header-image {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    background-image: url('../../assets/avatar.png');
+    background-size: cover;
+}
+
+.textcolor{
+    color: white;
+}

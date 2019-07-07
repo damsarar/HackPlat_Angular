@@ -1,0 +1,62 @@
+<mat-card class="sidebar-card">
+    <mat-card-header>
+      <div mat-card-avatar class="sidebar-header-image"></div>      
+    </mat-card-header>
+    <mat-card-content>
+        <mat-card-title class="textcolor">Damsara Ranasinghe</mat-card-title>
+    </mat-card-content>    
+</mat-card>
+
+<mat-nav-list>
+  <mat-list-item >
+      <a matLine routerLink="/" >Home Page</a>
+      <button mat-icon-button >
+        <mat-icon>home</mat-icon>
+      </button>
+  </mat-list-item>
+
+  <mat-divider></mat-divider>
+
+  <mat-list-item >
+    <a matLine routerLink="/event_list" >Event List</a>
+    <button mat-icon-button >
+      <mat-icon>event_available</mat-icon>
+    </button>
+  </mat-list-item>
+
+  <mat-divider></mat-divider>
+
+  <mat-list-item >
+    <a matLine routerLink="/venue_list" >Venue List</a>
+    <button mat-icon-button >
+      <mat-icon>location_on</mat-icon>
+    </button>
+  </mat-list-item>
+
+  <mat-divider></mat-divider>
+
+  <mat-list-item >
+      <a matLine routerLink="/profile" >My Profile</a>
+      <button mat-icon-button >
+        <mat-icon>account_circle</mat-icon>
+      </button>
+  </mat-list-item>
+
+  <mat-divider></mat-divider>
+
+  <mat-list-item >
+      <a matLine routerLink="/appoinments" >My Events</a>
+      <button mat-icon-button >
+        <mat-icon>event</mat-icon>
+      </button>
+  </mat-list-item>
+
+  <mat-divider></mat-divider>
+
+  <mat-list-item >
+      <a matLine routerLink="/logout" >Logout</a>
+      <button mat-icon-button >
+        <mat-icon>exit_to_app</mat-icon>
+      </button>
+  </mat-list-item>
+</mat-nav-list>

@@ -1,0 +1,45 @@
+<mat-card class="full-width">
+
+    <img src="assets/logoin.png" class="logo">
+  
+      <mat-form-field class="field" appearance="outline">
+        <mat-label>Event Name</mat-label>
+        <input matInput placeholder="Some Event" matInput [formControl]="myControl1" [matAutocomplete]="auto1">
+  
+        <mat-autocomplete #auto1="matAutocomplete" [displayWith]="displayFn1">
+          <mat-option *ngFor="let option of filteredOptions1 | async" [value]="option">
+            {{option.name}}
+          </mat-option>
+        </mat-autocomplete>
+  
+        <mat-icon matSuffix>event</mat-icon>
+        <mat-hint>Enter Yout Event Name Here</mat-hint>
+      </mat-form-field>
+  
+      <br>
+  
+      <mat-form-field class="field" appearance="outline">
+        <mat-label>Venue</mat-label>
+        <input matInput placeholder="Some Venue" matInput [formControl]="myControl2" [matAutocomplete]="auto2">
+  
+        <mat-autocomplete #auto2="matAutocomplete" [displayWith]="displayFn2">
+          <mat-option *ngFor="let option of filteredOptions2 | async" [value]="option">
+            {{option.name}}
+          </mat-option>
+        </mat-autocomplete>
+  
+        <mat-icon matSuffix>account_balance</mat-icon>
+        <mat-hint>Enter Venue Here</mat-hint>
+      </mat-form-field>
+  
+      <br>
+      <mat-grid-list cols="2" rowHeight="5:1">
+        <mat-grid-tile>
+          <button (click)="search()" class="btn" mat-raised-button color="primary"><mat-icon>favorite</mat-icon> Search</button>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <button class="btn" mat-raised-button color="warn"><mat-icon>clear</mat-icon> Clear</button>
+        </mat-grid-tile>
+      </mat-grid-list>
+  
+  </mat-card>
